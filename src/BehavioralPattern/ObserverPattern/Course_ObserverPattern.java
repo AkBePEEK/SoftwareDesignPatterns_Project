@@ -3,7 +3,7 @@ package BehavioralPattern.ObserverPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObserverCourse {
+public class Course_ObserverPattern {
     private final List<Observer> subscribers = new ArrayList<>();
 
     public void addSubscriber(Observer observer) {
