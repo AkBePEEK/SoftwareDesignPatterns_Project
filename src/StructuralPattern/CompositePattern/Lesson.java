@@ -1,14 +1,14 @@
 package StructuralPattern.CompositePattern;
 
-public class Lesson extends CourseComponent {
-    private final String name;
+public class Lesson extends ModuleComposite {
+    private String title;
 
-    public Lesson(String name) {
-        this.name = name;
+    public Lesson(String title) {
+        this.title = title;
     }
 
     @Override
-    public void showContent() {
-        System.out.println("Lesson: " + name);
+    public String toString() {
+        return "Lesson: " + title;
     }
 }
