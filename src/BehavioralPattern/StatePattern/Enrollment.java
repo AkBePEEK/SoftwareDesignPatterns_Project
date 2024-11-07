@@ -7,9 +7,11 @@ public class Enrollment {
         this.state = new PendingState();
     }
 
+    public void setState(EnrollmentState state) {
+        this.state = state;
+    }
+
     public void proceed() {
-        if (state != null) {
-            state = state.proceed();
-        }
+        state.proceed(this);
     }
 }
