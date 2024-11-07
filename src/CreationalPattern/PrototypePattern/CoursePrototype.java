@@ -1,20 +1,18 @@
 package CreationalPattern.PrototypePattern;
 
 public class CoursePrototype implements Cloneable {
-    private final String title;
-    private final String content;
+    private Course course;
 
-    public CoursePrototype(String title, String content) {
-        this.title = title;
-        this.content = content;
+    public CoursePrototype(Course course) {
+        this.course = course;
     }
 
-    public CoursePrototype clone() throws CloneNotSupportedException {
-        return (CoursePrototype) super.clone();
-    }
-
-    @Override
-    public String toString() {
-        return "CourseModule{" + "title='" + title + '\'' + ", content='" + content + '\'' + '}';
+    public Course clone() {
+        try {
+            return (Course) course.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
