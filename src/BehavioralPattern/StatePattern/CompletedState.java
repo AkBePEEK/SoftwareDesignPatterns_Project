@@ -2,7 +2,7 @@ package BehavioralPattern.StatePattern;
 
 public class CompletedState implements EnrollmentState {
     @Override
-    public EnrollmentState proceed() {
-        return null; // End of lifecycle
+    public void proceed(Enrollment enrollment) {
+        System.out.println("Enrollment is already completed.");
     }
 }

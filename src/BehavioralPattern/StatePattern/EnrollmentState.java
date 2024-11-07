@@ -1,5 +1,5 @@
 package BehavioralPattern.StatePattern;
 
 public interface EnrollmentState {
-    EnrollmentState proceed();
+    void proceed(Enrollment enrollment);
 }
