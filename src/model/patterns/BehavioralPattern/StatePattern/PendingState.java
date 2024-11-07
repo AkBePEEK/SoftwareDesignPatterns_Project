@@ -1,4 +1,6 @@
-package BehavioralPattern.StatePattern;
+package model.patterns.BehavioralPattern.StatePattern;
+
+import model.Enrollment;
 
 public class PendingState implements EnrollmentState {
     @Override

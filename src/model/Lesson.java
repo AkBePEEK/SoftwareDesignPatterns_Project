@@ -1,7 +1,9 @@
-package StructuralPattern.CompositePattern;
+package model;
+
+import model.patterns.StructuralPattern.CompositePattern.ModuleComposite;
 
 public class Lesson extends ModuleComposite {
-    private String title;
+    private final String title;
 
     public Lesson(String title) {
         this.title = title;

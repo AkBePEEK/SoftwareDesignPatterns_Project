@@ -1,4 +1,7 @@
-package BehavioralPattern.StatePattern;
+package model;
+
+import model.patterns.BehavioralPattern.StatePattern.EnrollmentState;
+import model.patterns.BehavioralPattern.StatePattern.PendingState;
 
 public class Enrollment {
     private EnrollmentState state;
